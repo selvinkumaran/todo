@@ -1,0 +1,46 @@
+<div class="row">
+  <div class="col-3"></div>
+  <div class="col-6 my-5">
+    <h1 class="text-center">Register</h1>
+
+    <form>
+      <!-- Name input -->
+      <div class="form-outline mb-4">
+        <label class="form-label" for="registerName">Name</label>
+        <input type="text" id="registerName" class="form-control" [(ngModel)]="name" />
+      </div>
+      <!-- Email input -->
+      <div class="form-outline mb-4">
+        <label class="form-label" for="registerEmail">Email</label>
+        <input type="text" id="registerEmail" class="form-control" [(ngModel)]="username"  />
+      </div>
+
+      <!-- Password input -->
+      <div class="form-outline mb-4">
+        <label class="form-label" for="registerPassword">Password</label>
+        <input type="password" id="registerPassword" class="form-control" [(ngModel)]="password"   />
+      </div>
+
+      <!-- Repeat Password input -->
+      <div class="form-outline mb-4">
+        <label class="form-label" for="registerRepeatPassword"
+          >Repeat password</label
+        >
+        <input
+          type="password"
+          id="registerRepeatPassword"
+          class="form-control"
+          [(ngModel)]="confirmPassword" 
+        />
+      </div>
+
+      <!-- Submit button -->
+      <div class="d-flex justify-content-center">
+        <button type="submit" (click)="register()" class="btn btn-primary btn-block mb-3">
+          Sign in
+        </button>
+      </div>
+    </form>
+  </div>
+  <div class="col-3"></div>
+</div>
